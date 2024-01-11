@@ -1,6 +1,5 @@
 package com.example;
 
-import org.openjdk.jmh.runner.RunnerException;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ public class App {
         return employee.getDepartment() + " " + employee.getName();
     };
 
-    public static void main(String[] args) throws RunnerException, IOException {
+    public static void main(String[] args) throws IOException {
         String csvFile = relativePath + "NewEmployeeData.csv";
         // age threshold
         int ageThreshold = 30;

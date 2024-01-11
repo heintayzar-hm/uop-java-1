@@ -49,5 +49,9 @@ Note: I am using ubuntu, I am not sure if it works on windows.
 - And we read that new file. You can find the new file in `src/employee-processing/data/NewEmployeeData.csv`.
 
 
+#### Additional Tests for optimization
+- We tried to optimize the stream in two ways: parallelStream and concurrent.
+- Concurrent is not useful in the given cases but i tried it out as expected, it is longer than stream(sequential)
+- As for parallel, the difference is not visible in small cases, but after i added more , the difference become more noticeable. It becomes almost half. But some operations does not change much and make even longer.
 
-
+- There are other methods that I can think of like HashMap, but it will add more complexity for scenario like this.
